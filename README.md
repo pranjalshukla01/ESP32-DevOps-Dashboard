@@ -54,7 +54,7 @@ Open the `.ino` file and edit the top:
 ```cpp
 const char* WIFI_SSID     = "YOUR_WIFI_NAME";
 const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
-const char* API_KEY       = "esp32-secret";   // change it, and match script.js
+const char* API_KEY       = "esp32-secret";   
 ```
 
 Select **ESP32 Dev Module** and your COM port, then upload. Open the Serial Monitor at **115200 baud** and note the printed IP address.
@@ -64,8 +64,8 @@ Select **ESP32 Dev Module** and your COM port, then upload. Open the Serial Moni
 Edit the top of `frontend/script.js`:
 
 ```javascript
-const ESP32_IP = "192.168.1.42";   // IP from the Serial Monitor
-const API_KEY  = "esp32-secret";   // same as in the .ino
+const ESP32_IP = "192.168.1.42";   
+const API_KEY  = "esp32-secret";   
 ```
 
 **3. Run it**
